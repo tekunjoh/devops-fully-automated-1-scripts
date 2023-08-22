@@ -11,6 +11,8 @@ sudo echo "jenkins ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
 
+#NB: If you sing amazon linux 2023, please use the following command to install java and then start jenkins: 
+#sudo dnf install java-11-amazon-corretto -y
 # Installing Git
 sudo yum install git -y
 
